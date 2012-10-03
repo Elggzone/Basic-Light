@@ -1,0 +1,5 @@
+= Version history =
+
+2012.09.09:
+
+- Initial release for Elgg 1.8.8

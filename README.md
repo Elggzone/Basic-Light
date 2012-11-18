@@ -19,7 +19,7 @@ FEATURES:
 - Custom Content on activity page
 - Customized Icons
 - Walled Garden support
-- Language support - en
+- Language support – en
 - CSS 3 styling
 - Version Elgg 1.8
 

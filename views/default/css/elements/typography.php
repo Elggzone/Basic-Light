@@ -90,7 +90,7 @@ h6 { font-size: 0.8em; }
 	text-decoration: none;
 }
 .elgg-heading-main {
-	line-height: 2.0em;
+	line-height: 1.8em;
 	color: #222;
 	float: left;
 	max-width: 530px;

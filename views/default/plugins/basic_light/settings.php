@@ -68,6 +68,7 @@ echo elgg_view('input/dropdown', array(
 echo '</div>';
 
 echo "<div class=\"label\">" . elgg_echo('basic_light:info:sidebar') . "</div>";
+echo "<div>" . elgg_echo('basic_light:info:modules') . "</div>";
 
 echo '<div>';
 echo elgg_echo('basic_light:label:show_icon');
@@ -110,3 +111,12 @@ echo elgg_view('input/dropdown', array(
 	'value' => $vars['entity']->show_custom,
 ));
 echo '</div>';
+
+echo '<div>';
+echo elgg_echo('basic_light:label:html');
+echo ' ';
+echo elgg_view('input/longtext', array(
+	'name' => "params[html_content]",
+	'value' => $vars['entity']->html_content,
+));
+echo "</div>";

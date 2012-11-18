@@ -76,14 +76,14 @@
 }
 .elgg-sidebar {
 	position: relative;
-	padding: 20px 0 20px 20px;
+	padding: 22px 0 20px 20px;
 	float: right;
 	width: 210px;
 	margin: 0 0 0 20px;
 }
 .elgg-sidebar-alt {
 	position: relative;
-	padding: 20px 20px 20px 0;
+	padding: 24px 20px 20px 0;
 	float: left;
 	width: 160px;
 	margin: 0 20px 0 0;

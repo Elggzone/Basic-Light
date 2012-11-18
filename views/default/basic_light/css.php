@@ -67,6 +67,9 @@
 	background: #EDEDED;
     padding: 5px 2px 2px 5px;
 }
+.elgg-module-thewire {
+	padding-top: 7px;
+}
 .elgg-form-account {
 	width: 38.297872%;
 }

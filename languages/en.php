@@ -7,9 +7,10 @@
 $english = array(
 	
 	// Misc
-	'basic_light:copyright'     => 'Designed by Elggzone &copy; 2012',
+	'basic_light:copyright'     => 'Copyright &copy; ',
 	'basic_light:elgg'      	=> 'Powered by Elgg',
 	'basic_light:thewire'		=> 'The Wire:',
+	'basic_light:tooltip'		=> 'Visit Elggzone',
 	'basic_light:welcome'		=> 'Hello, %s',
 
 	// Settings

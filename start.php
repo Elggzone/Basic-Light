@@ -76,16 +76,18 @@ function basic_pagesetup_handler() {
 	elgg_unregister_menu_item('topbar', 'dashboard');
 	elgg_unregister_menu_item('topbar', 'elgg_logo');
 	
-	// Extend footer with copyright	
+	// Extend footer with copyright
+	$year = date('Y');	
 	$href = "http://www.perjensen-online.dk";
 	elgg_register_menu_item('footer', array(
 		'name' => 'copyright_this',
 		'href' => $href,
 		'title' => elgg_echo('basic_light:tooltip'),
-		'text' => elgg_echo('basic_light:copyright'),
+		'text' => elgg_echo('basic_light:copyright') . $year . elgg_echo(' Elggzone'),
 		'priority' => 1,
 		'section' => 'alt',
-	));			
+	));	
+			
 	// Extend footer with elgg link
 	$href = "http://elgg.org";
 	elgg_register_menu_item('footer', array(

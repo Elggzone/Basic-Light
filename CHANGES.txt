@@ -1,8 +1,8 @@
 = Version history =
 
-2012.12.17:
+2012.12.20:
 
-- Updated to Elgg 1.8.11
+- Updated: Css linear gradients
 - Changed: Copyright notice
 
 2012.11.14:

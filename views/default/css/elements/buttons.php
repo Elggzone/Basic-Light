@@ -9,7 +9,6 @@
 /* **************************
 	BUTTONS
 ************************** */
-
 .elgg-button {
 	display: inline-block;
 	outline: none;
@@ -44,48 +43,45 @@
 	color: #222;
     border: 1px solid #D1D7DB;
     
-    background-color: #fbfbfb;
-    background-image: -moz-linear-gradient(top, #ffffff, #EBEFF1);
-    background-image: -ms-linear-gradient(top, #ffffff, #EBEFF1);
-    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#EBEFF1));
-    background-image: -webkit-linear-gradient(top, #ffffff, #EBEFF1);
-    background-image: -o-linear-gradient(top, #ffffff, #EBEFF1);
-    background-image: linear-gradient(top, #ffffff, #EBEFF1);
-    background-repeat: repeat-x;
+	background-color: #EBEFF1; 
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#FFFFFF), to(#EBEFF1));
+	background-image: -webkit-linear-gradient(top, #FFFFFF, #EBEFF1); 
+	background-image:    -moz-linear-gradient(top, #FFFFFF, #EBEFF1);
+	background-image:     -ms-linear-gradient(top, #FFFFFF, #EBEFF1);
+	background-image:      -o-linear-gradient(top, #FFFFFF, #EBEFF1);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#EBEFF1', GradientType=0);
 }
 .elgg-button-submit:hover,
-.elgg-button-action:hover {
-    background: -moz-linear-gradient(100% 100% 90deg, #FFFFFF, #EEEEEE) repeat scroll 0 0 transparent;
-	box-shadow: inset 1px 0 0 #FFFFFF;
-}
+.elgg-button-action:hover,
 .elgg-button-submit:active,
-.elgg-button-action:active {
-    background: -moz-linear-gradient(100% 100% 90deg, #FFFFFF, #EEEEEE) repeat scroll 0 0 transparent;
-	box-shadow: inset 1px 0 0 #FFFFFF;
+.elgg-button-action:active,
+.elgg-button-submit.elgg-state-disabled {
+    background-color: #FFFFFF; 
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#EEEEEE), to(#FFFFFF));
+	background-image: -webkit-linear-gradient(top, #EEEEEE, #FFFFFF); 
+	background-image:    -moz-linear-gradient(top, #EEEEEE, #FFFFFF);
+	background-image:     -ms-linear-gradient(top, #EEEEEE, #FFFFFF);
+	background-image:      -o-linear-gradient(top, #EEEEEE, #FFFFFF);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#EEEEEE', endColorstr='#FFFFFF', GradientType=0);
 }
 .elgg-button-submit.elgg-state-disabled {
 	cursor: default;
 	color: #CCC;
-    background: -moz-linear-gradient(100% 100% 90deg, #FFFFFF, #EEEEEE) repeat scroll 0 0 transparent;
-	box-shadow: inset 1px 0 0 #FFFFFF;
 }
 /* **************************
 	CANCEL
 ************************** */
 .elgg-button-cancel {
 	color: #FFF;
-    border: 1px solid #ad6704;
+    border: 1px solid #AD6704;
     
-    background-color: #faa732;
-    background-image: -moz-linear-gradient(top, #fbb450, #f89406);
-    background-image: -ms-linear-gradient(top, #fbb450, #f89406);
-    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#fbb450), to(#f89406));
-    background-image: -webkit-linear-gradient(top, #fbb450, #f89406);
-    background-image: -o-linear-gradient(top, #fbb450, #f89406);
-    background-image: linear-gradient(top, #fbb450, #f89406);
-    background-repeat: repeat-x;
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fbb450', endColorstr='#f89406', GradientType=0);
+	background-color: #F89406; 
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#FBB450), to(#F89406));
+	background-image: -webkit-linear-gradient(top, #FBB450, #F89406); 
+	background-image:    -moz-linear-gradient(top, #FBB450, #F89406);
+	background-image:     -ms-linear-gradient(top, #FBB450, #F89406);
+	background-image:      -o-linear-gradient(top, #FBB450, #F89406);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FBB450', endColorstr='#F89406', GradientType=0);
     
     -webkit-box-shadow: inset 0 1px 0 #FBCC89;
     -moz-box-shadow: inset 0 1px 0 #FBCC89;
@@ -93,8 +89,13 @@
 }
 .elgg-button-cancel:hover {
 	color: #FFF;
-    background: -moz-linear-gradient(100% 100% 90deg, #fbb450, #f89406) repeat scroll 0 0 transparent;    
-	box-shadow: inset 1px 0 0 #FBCC89;
+    background-color: #FBB450; 
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#F89406), to(#FBB450));
+	background-image: -webkit-linear-gradient(top, #F89406, #FBB450); 
+	background-image:    -moz-linear-gradient(top, #F89406, #FBB450);
+	background-image:     -ms-linear-gradient(top, #F89406, #FBB450);
+	background-image:      -o-linear-gradient(top, #F89406, #FBB450);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#F89406', endColorstr='#FBB450', GradientType=0);
 }
 /* **************************
 	DELETE
@@ -103,25 +104,27 @@
 	color: #FFF;
     border: 1px solid #802420;
     
-    background-color: #da4f49;
-    background-image: -moz-linear-gradient(top, #ee5f5b, #bd362f);
-    background-image: -ms-linear-gradient(top, #ee5f5b, #bd362f);
-    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ee5f5b), to(#bd362f));
-    background-image: -webkit-linear-gradient(top, #ee5f5b, #bd362f);
-    background-image: -o-linear-gradient(top, #ee5f5b, #bd362f);
-    background-image: linear-gradient(top, #ee5f5b, #bd362f);
-    background-repeat: repeat-x;
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ee5f5b', endColorstr='#bd362f', GradientType=0);
+	background-color: #BD362F; 
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#F34545), to(#BD362F));
+	background-image: -webkit-linear-gradient(top, #F34545, #BD362F); 
+	background-image:    -moz-linear-gradient(top, #F34545, #BD362F);
+	background-image:     -ms-linear-gradient(top, #F34545, #BD362F);
+	background-image:      -o-linear-gradient(top, #F34545, #BD362F);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#F34545', endColorstr='#BD362F', GradientType=0);	
     
     -webkit-box-shadow: inset 0 1px 0 #F38F8B;
     -moz-box-shadow: inset 0 1px 0 #F38F8B;
     box-shadow: inset 0 1px 0 #F38F8B;
 }
 .elgg-button-delete:hover {
-    background: -moz-linear-gradient(100% 100% 90deg, #ee5f5b, #bd362f) repeat scroll 0 0 transparent;    
-	box-shadow: inset 1px 0 0 #F38F8B;
+    background-color: #F34545; 
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#BD362F), to(#F34545));
+	background-image: -webkit-linear-gradient(top, #BD362F, #F34545); 
+	background-image:    -moz-linear-gradient(top, #BD362F, #F34545);
+	background-image:     -ms-linear-gradient(top, #BD362F, #F34545);
+	background-image:      -o-linear-gradient(top, #BD362F, #F34545);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#BD362F', endColorstr='#F34545', GradientType=0);
 }
-
 .elgg-button-dropdown {
 	text-decoration:none;
 	position:relative;
@@ -137,17 +140,14 @@
 	-moz-box-shadow: 0 0 0;
 	box-shadow: 0 0 0;
 }
-
 .elgg-button-dropdown:after {
 	content: " \25BC ";
 	font-size:smaller;
 }
-
 .elgg-button-dropdown:hover {
 	color: #FFF;
 	text-decoration:none;
 }
-
 .elgg-button-dropdown.elgg-state-active {
 	background: none;
 	outline: none;

@@ -24,14 +24,14 @@
     -webkit-border-radius: 3px 0 0 3px;
     -moz-border-radius: 3px 0 0 3px;
     border-radius: 3px 0 0 3px;
+    
+    border-left-width: 1px;
 }
 .elgg-pagination li:last-child a,
 .elgg-pagination li:last-child span {
     -webkit-border-radius: 0 3px 3px 0;
     -moz-border-radius: 0 3px 3px 0;
     border-radius: 0 3px 3px 0;
-
-    border-right-width: 1px;
 }
 .elgg-pagination a, .elgg-pagination span {
     display: block;
@@ -41,39 +41,33 @@
     text-decoration: none;
     width: auto;
     
-    background-color: #fbfbfb;
-    background-image: -moz-linear-gradient(top, #ffffff, #EBEFF1);
-    background-image: -ms-linear-gradient(top, #ffffff, #EBEFF1);
-    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#EBEFF1));
-    background-image: -webkit-linear-gradient(top, #ffffff, #EBEFF1);
-    background-image: -o-linear-gradient(top, #ffffff, #EBEFF1);
-    background-image: linear-gradient(top, #ffffff, #EBEFF1);
-    background-repeat: repeat-x;
+	background-color: #EBEFF1; 
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#FFFFFF), to(#EBEFF1));
+	background-image: -webkit-linear-gradient(top, #FFFFFF, #EBEFF1); 
+	background-image:    -moz-linear-gradient(top, #FFFFFF, #EBEFF1);
+	background-image:     -ms-linear-gradient(top, #FFFFFF, #EBEFF1);
+	background-image:      -o-linear-gradient(top, #FFFFFF, #EBEFF1);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#EBEFF1', GradientType=0);
     
     border-color: #D1D7DB;
     border-style: solid;
-    border-width: 1px 0 1px 1px;
-           
-    -moz-border-bottom-colors: none;
-    -moz-border-image: none;
-    -moz-border-left-colors: none;
-    -moz-border-right-colors: none;
-    -moz-border-top-colors: none;    
+    border-width: 1px 1px 1px 0; 
   
     -webkit-box-shadow: inset 0 1px 0 #ffffff;
     -moz-box-shadow: inset 0 1px 0 #ffffff;
     box-shadow: inset 0 1px 0 #ffffff;  
 }
-.elgg-pagination a:hover {
-    background: -moz-linear-gradient(100% 100% 90deg, #FFFFFF, #EEEEEE) repeat scroll 0 0 transparent;
-	box-shadow: inset 1px 0 0 #FFFFFF;
-    color: #666;
-}
+.elgg-pagination a:hover,
 .elgg-pagination .elgg-state-selected span {
-    background: -moz-linear-gradient(100% 100% 90deg, #FFFFFF, #EEEEEE) repeat scroll 0 0 transparent;
-	box-shadow: inset 1px 0 0 #FFFFFF;
     color: #666;
+    
+    background-color: #FFFFFF; 
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#EEEEEE), to(#FFFFFF));
+	background-image: -webkit-linear-gradient(top, #EEEEEE, #FFFFFF); 
+	background-image:    -moz-linear-gradient(top, #EEEEEE, #FFFFFF);
+	background-image:     -ms-linear-gradient(top, #EEEEEE, #FFFFFF);
+	background-image:      -o-linear-gradient(top, #EEEEEE, #FFFFFF);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#EEEEEE', endColorstr='#FFFFFF', GradientType=0);
 }
 .elgg-pagination .elgg-state-disabled span {
 	color: #CCCCCC;
@@ -89,14 +83,12 @@
 	margin-bottom: 10px;
 	width: auto;
     
-    background-color: #fbfbfb;
-    background-image: -moz-linear-gradient(top, #ffffff, #EBEFF1);
-    background-image: -ms-linear-gradient(top, #ffffff, #EBEFF1);
-    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#EBEFF1));
-    background-image: -webkit-linear-gradient(top, #ffffff, #EBEFF1);
-    background-image: -o-linear-gradient(top, #ffffff, #EBEFF1);
-    background-image: linear-gradient(top, #ffffff, #EBEFF1);
-    background-repeat: repeat-x;
+	background-color: #EBEFF1; 
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#FFFFFF), to(#EBEFF1));
+	background-image: -webkit-linear-gradient(top, #FFFFFF, #EBEFF1); 
+	background-image:    -moz-linear-gradient(top, #FFFFFF, #EBEFF1);
+	background-image:     -ms-linear-gradient(top, #FFFFFF, #EBEFF1);
+	background-image:      -o-linear-gradient(top, #FFFFFF, #EBEFF1);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#EBEFF1', GradientType=0);
     
     border: 1px solid #D1D7DB;
@@ -113,12 +105,12 @@
     display: inline-block;
     vertical-align: top;
 }
-.elgg-tabs li:last-child a {
-    border-right-width: 1px;
+.elgg-tabs li:first-child a {
+    border-left-width: 1px;
 }
 .elgg-tabs a { 
     display: block;
-    margin: 0 auto;
+    margin: 0;
     padding: 7px 16px 8px;
     text-align: center;
     text-decoration: none;
@@ -126,16 +118,17 @@
 
     border-color: #D1D7DB;
     border-style: solid;
-    border-width: 0 0 0 1px;
-    box-shadow: 1px 0 0 #FFFFFF inset;
+    border-width: 0 1px 0 0;
 }
-.elgg-tabs a:hover {
-    background: -moz-linear-gradient(100% 100% 90deg, #FFFFFF, #EEEEEE) repeat scroll 0 0 transparent;
-	box-shadow: inset 1px 0 0 #FFFFFF;
-}
+.elgg-tabs a:hover,
 .elgg-tabs .elgg-state-selected {
-    background: -moz-linear-gradient(100% 100% 90deg, #FFFFFF, #EEEEEE) repeat scroll 0 0 transparent;
-	box-shadow: inset 1px 0 0 #FFFFFF;
+	background-color: #FFFFFF; 
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#EEEEEE), to(#FFFFFF));
+	background-image: -webkit-linear-gradient(top, #EEEEEE, #FFFFFF); 
+	background-image:    -moz-linear-gradient(top, #EEEEEE, #FFFFFF);
+	background-image:     -ms-linear-gradient(top, #EEEEEE, #FFFFFF);
+	background-image:      -o-linear-gradient(top, #EEEEEE, #FFFFFF);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#EEEEEE', endColorstr='#FFFFFF', GradientType=0);
 }
 .elgg-tabs .elgg-state-selected a {
     color: #666;
@@ -320,14 +313,12 @@
 	margin-bottom: 10px;
 	width: auto;
     
-    background-color: #fbfbfb;
-    background-image: -moz-linear-gradient(top, #ffffff, #EBEFF1);
-    background-image: -ms-linear-gradient(top, #ffffff, #EBEFF1);
-    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#EBEFF1));
-    background-image: -webkit-linear-gradient(top, #ffffff, #EBEFF1);
-    background-image: -o-linear-gradient(top, #ffffff, #EBEFF1);
-    background-image: linear-gradient(top, #ffffff, #EBEFF1);
-    background-repeat: repeat-x;
+	background-color: #EBEFF1; 
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#FFFFFF), to(#EBEFF1));
+	background-image: -webkit-linear-gradient(top, #FFFFFF, #EBEFF1); 
+	background-image:    -moz-linear-gradient(top, #FFFFFF, #EBEFF1);
+	background-image:     -ms-linear-gradient(top, #FFFFFF, #EBEFF1);
+	background-image:      -o-linear-gradient(top, #FFFFFF, #EBEFF1);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#EBEFF1', GradientType=0);
     
     border: 1px solid #D1D7DB;
@@ -344,16 +335,15 @@
     display: inline-block;
     vertical-align: top;
 }
-.elgg-menu-filter > li:last-child a {
-    border-right-width: 1px;
+.elgg-menu-filter > li:first-child a {
+    border-left-width: 1px;
 }
 .elgg-menu-filter > li:hover {
 	background: #dedede;
 }
 .elgg-menu-filter > li > a {
     display: block;
-
-    margin: 0 auto;
+    margin: 0;
     padding: 7px 16px 8px;
     text-align: center;
     text-decoration: none;
@@ -361,16 +351,17 @@
 
     border-color: #D1D7DB;
     border-style: solid;
-    border-width: 0 0 0 1px;
-    box-shadow: inset 1px 0 0 #FFFFFF;
+    border-width: 0 1px 0 0;
 }
-.elgg-menu-filter > li > a:hover {
-    background: -moz-linear-gradient(100% 100% 90deg, #FFFFFF, #EEEEEE) repeat scroll 0 0 transparent;
-	box-shadow: inset 1px 0 0 #FFFFFF;
-}
+.elgg-menu-filter > li > a:hover,
 .elgg-menu-filter > .elgg-state-selected {
-    background: -moz-linear-gradient(100% 100% 90deg, #FFFFFF, #EEEEEE) repeat scroll 0 0 transparent;
-    box-shadow: inset 1px 0 0 #FFFFFF;
+	background-color: #FFFFFF; 
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#EEEEEE), to(#FFFFFF));
+	background-image: -webkit-linear-gradient(top, #EEEEEE, #FFFFFF); 
+	background-image:    -moz-linear-gradient(top, #EEEEEE, #FFFFFF);
+	background-image:     -ms-linear-gradient(top, #EEEEEE, #FFFFFF);
+	background-image:      -o-linear-gradient(top, #EEEEEE, #FFFFFF);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#EEEEEE', endColorstr='#FFFFFF', GradientType=0);
 }
 .elgg-menu-filter > .elgg-state-selected > a {
     color: #666;

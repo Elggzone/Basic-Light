@@ -106,16 +106,15 @@
 .elgg-navbar {
 	clear: both;
     *position: relative;
-    background: #232527;
     
-    background-image: -moz-linear-gradient(top, #3D4145, #2B2E31);
-    background-image: -ms-linear-gradient(top, #3D4145, #2B2E31);
-    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#3D4145), to(#2B2E31));
-    background-image: -webkit-linear-gradient(top, #3D4145, #2B2E31);
-    background-image: -o-linear-gradient(top, #3D4145, #2B2E31);
-    background-image: linear-gradient(top, #3D4145, #2B2E31);
-    background-repeat: repeat-x;
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3D4145', endColorstr='#2B2E31', GradientType=0);
+	background-color: #2B2E31; 
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#3D4145), to(#2B2E31));
+	background-image: -webkit-linear-gradient(top, #3D4145, #2B2E31); 
+	background-image:    -moz-linear-gradient(top, #3D4145, #2B2E31);
+	background-image:     -ms-linear-gradient(top, #3D4145, #2B2E31);
+	background-image:      -o-linear-gradient(top, #3D4145, #2B2E31);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3D4145', endColorstr='#2B2E31', GradientType=0);	
+    
     border-bottom: 1px solid #000;
 
     -webkit-box-shadow: 0 1px 3px rgba(0,0,0,.25), inset 0 -1px 0 rgba(0,0,0,.1);

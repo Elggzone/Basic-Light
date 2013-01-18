@@ -5,7 +5,7 @@
  *
  * @author Elggzone
  * @license http://www.gnu.org/licenses/gpl-2.0.html GNU General Public License v2
- * @copyright Copyright (c) 2012, Elggzone
+ * @copyright Copyright (c) 2013, Elggzone
  *
  * @link http://www.perjensen-online.dk/
  *
@@ -16,16 +16,20 @@ elgg_register_event_handler('init','system','basic_init');
 function basic_init() {
 
 	$action_path = dirname(__FILE__) . '/actions';
-
+	elgg_register_action("basic_light/admin/settings", "$action_path/settings.php", 'admin');
+	elgg_register_action("basic_light/admin/sidebar", "$action_path/settings.php", 'admin');
+		
 	$plugin = elgg_get_plugin_from_id('basic_light');
 	
 	if ($plugin->show_thewire == 'yes'){
 		elgg_register_action("basic_light/add", "$action_path/add.php");		
-		elgg_extend_view('js/elgg', 'js/update');
+		elgg_extend_view('js/elgg', 'js/basic_light/update');
 	}
 	
 	elgg_register_event_handler('pagesetup', 'system', 'basic_pagesetup_handler', 1000);
-	
+
+	elgg_register_admin_menu_item('configure', 'basic_light', 'settings');
+		
 	elgg_extend_view('css/elgg', 'basic_light/css');
 	elgg_extend_view('css/admin', 'basic_light/admin');
 	

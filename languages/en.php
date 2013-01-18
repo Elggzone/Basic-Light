@@ -14,9 +14,11 @@ $english = array(
 	'basic_light:welcome'		=> 'Hello, %s',
 
 	// Settings
+	'admin:settings:basic_light'	=> 'Basic Light',
+	'elggzone:panel'				=> 'Theme Options',
+		
 	'basic_light:info:general'		=> 'General:',
-	'basic_light:info:layout'		=> 'Appearance:',
-	'basic_light:info:modules'		=> 'Select modules to your sidebars.',
+	'basic_light:info:modules'		=> 'Select sidebar modules:',
 	'basic_light:info:sidebar'		=> 'Sidebar:',
 	'basic_light:label:columns'		=> 'Select your preferred layout',
 	'basic_light:label:custom'		=> 'Custom Content?',
@@ -32,7 +34,9 @@ $english = array(
 	'basic_light:option:three'		=> 'Three Columns',
 	'basic_light:option:default'	=> 'Default',
 	'basic_light:option:palesky'	=> 'Pale Sky',
-	'basic_light:option:bronco'		=> 'Bronco',					
+	'basic_light:option:bronco'		=> 'Bronco',
+	'basic_light:tab:general'		=> 'General',	
+	'basic_light:tab:sidebar'		=> 'Sidebar',					
 	
 	// demo	
 	'basic_light:demo:title'	=> 'Info',

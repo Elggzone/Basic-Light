@@ -82,4 +82,11 @@
 .elgg-module-group {
     margin-bottom: 0;
 }
-
+.elgg-menu-groups-my-status li a {
+	display: block;
+	margin: 3px 0 5px 0;
+	padding: 2px 4px 2px 0;
+}
+.elgg-menu-groups-my-status li a:hover {
+	text-decoration: none;
+}

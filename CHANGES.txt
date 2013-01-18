@@ -1,5 +1,11 @@
 = Version history =
 
+2013.01.16:
+
+- Updated to Elgg 1.8.12
+- Improved: Options panel
+- Deleted: views/default/plugins/
+
 2012.12.20:
 
 - Updated: Css linear gradients

@@ -1,4 +1,13 @@
-//<script>
+<?php
+/**
+ *
+ * Basic Light river wire js
+ *
+ */
+
+if (0) { ?><script><?php }
+
+?>
 
 elgg.provide('elgg.basic_light');
 
